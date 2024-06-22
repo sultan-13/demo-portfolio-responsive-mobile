@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* header & navigation */
+
+.header {
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+    background-color: #FFF8F3;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+.nav-title {
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+
+}
+
+.text-primary {
+    color: #FD6E0A;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+nav ul li {
+    font-size: 20px;
+    color: #474747;
+}
+
+.btn-primary {
+    padding: 18px 36px;
+    border: 0;
+    color: #fff;
+    background-color: #FD6E0A;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* banner section */
+
+.banner {
+    display: flex;
+    margin: 0 200px;
+    align-items: center;
+}
+
+.banner-sub-title {
+    color: #474747;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-title {
+    color: #181818;
+    font-size: 85px;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: #757575;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+.contact-btn {
+    padding: 18px 24px;
+    border: 0;
+    color: #FD6E0A;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid #FD6E0A;
+    background: transparent;
+    margin-left: 30px;
+}
+
+.fa-phone {
+    margin-right: 10px;
+}
+
+/* main section */
+
+
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* about section */
+
+.about {
+    border-radius: 10px;
+    background: #FFF8F3;
+    margin-top: 130px;
+    padding: 130px 150px;
+}
+
+.section-title {
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-description {
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.about-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-title {
+    color: #757575;
+    font-size: 20px;
+}
+
+.info-description {
+    color: #474747;
+    font-size: 20px;
+}
+
+/* what-i-do */
+
+.what-i-do {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.skill-container {
+    display: flex;
+    gap: 24px;
+}
+
+.skill {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+}
+
+.skill .title {
+    color: #181818;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.skill .description {
+    color: #757575;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+/* resume section */
+
+.resume-content {
+    display: flex;
+    gap: 24px;
+    padding: 10px;
+}
+
+.resume-heading {
+    margin-bottom: 100px;
+}
+
+.resume-title {
+    color: #474747;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.resume-item{
+    margin: 30px 0;
+}
+
+.resume-item .title {
+
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.resume-item .sub-title {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.resume-item .description {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.resume-btn{
+    text-align: center;
+}
+
+/* contact section */
+
+.contact{
+    display: flex;
+    background: #FFF8F3;
+    margin-top: 100px;
+    padding: 130px 200px;
+    gap: 100px;
+}
+
+.contact .section-title{
+    text-align: left;
+}
+
+
+.contact .section-description{
+    text-align: left;
+}
+
+.contact a{
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+form input[type="text"],textarea,input[type="email"]{
+    display: block;
+    margin-top: 24px;
+    width: 100%;
+    padding: 18px 30px;
+    border: 0;
+}
+
+form .btn-primary{
+    margin-top: 24px;
+}
+
+
+@media screen and (max-width : 576px) {
+    
+    .skill-container,.resume-content{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about,.contact {
+        
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+  .banner-title{
+    font-size: 70px;
+  }
+  
+
+    form input[type="text"],textarea,input[type="email"]{
+        width: 80%;
+        padding: 10px;
+    }
+
+    .header{
+
+        background-image: none;
+    }
+
+    nav{
+        padding: 20px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+
+    .banner{
+        flex-direction: column;
+        margin: 0 20px;
+        
+    }
+
+    .banner img{
+        width: 100%;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+
+    
+}
+
+
+@media screen and (min-width : 577px) and (max-width : 992px) {
+    
+    .resume-item .title {
+        font-size: 22px;
+    
+    }
+
+    .resume-content,.skill-container{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about,.contact {
+        
+        padding: 15px;
+    }
+
+    .contact{
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    form input[type="text"],textarea,input[type="email"]{
+        width: 60%;
+        padding: 15px;
+    }
+
+    .header{
+        background-image: none;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 10px;
+        padding: 50px;
+        align-items: flex-start;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+
+    .banner{
+        flex-direction: column;
+        margin: 0 50px;
+    }
+
+    .banner img{
+        width: 100%;
+    }
+
+    .hide{
+        display: none;
+    }
+}
+
